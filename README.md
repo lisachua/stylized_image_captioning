@@ -9,9 +9,11 @@ Our model uses two datasets. The first is the Flickr10k dataset that has an imag
 
 ## Techniques Overview
 <b>LSTM model</b>
+
 We will apply the factored LSTM model from the paper. For image captioning, the commonly used strategies in literature are to adopt a pre- trained CNN model as an encoder to map an image to a fixed dimensional feature vector and then use a LSTM model as the decoder to generate captions based on the image vector. Here, the Factored LSTM model factors the parameters into three matrices to distill the underlying style factors in text data. 
 
 <b>Multi-task training</b>
+
 In the first task, the factored LSTM is trained to generate factual captions given the paired images. In the second task, the factored LSTM is trained as a language model on the romantic or humorous sentences. 
 
 

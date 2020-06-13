@@ -8,6 +8,7 @@ The objective of this project is to implement an image captioning model that has
 Our model uses two datasets. The first is the Flickr10k dataset that has an image and factual-caption, this is used for our image captioning task. For our language model, we will use the FlickrStyle 7k dataset published by the authors of the original paper.
 
 ## Techniques Overview
+![](stylenet_framework.png)
 <b>LSTM model</b>
 
 We will apply the factored LSTM model from the paper. For image captioning, the commonly used strategies in literature are to adopt a pre- trained CNN model as an encoder to map an image to a fixed dimensional feature vector and then use a LSTM model as the decoder to generate captions based on the image vector. Here, the Factored LSTM model factors the parameters into three matrices to distill the underlying style factors in text data. 
